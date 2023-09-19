@@ -1,4 +1,30 @@
 .container-1 {
     border: 5px solid navy;
     height: 500px;
+    /* flex properties for the Parent or Container element */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-flow: row wrap; /*Flex-flow is flex-direction and flex-wrap in one line */
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Set all flex-items to have a flex-grow of 1 */
+.container-1 > img{
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+
+/* Flex properties for the Child or Flex Item elements */
+#child-1{
+    border: 1px solid maroon;
+    order: 3;
+    flex-grow: 3;
+}
+
+#child-2 {
+    border: 2px solid forestgreen;
+    order: 1;
+    align-self: flex-end;
 }
